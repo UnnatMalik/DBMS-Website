@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html data-wf-domain="" data-wf-page="665f27834e206c9660b3a633" data-wf-site="665f27834e206c9660b3a626" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>DBMS Website</title>
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="https://cdn.prod.website-files.com/665f27834e206c9660b3a626/css/north-website.webflow.29ac860a1.min.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <style>
+        @media (min-width:992px) {
+            html.w-mod-js:not(.w-mod-ix) [data-w-id="327681a8-4cda-fcd2-8e49-116859dd7b68"] {
+                opacity: 0;
+            }
+
+            html.w-mod-js:not(.w-mod-ix) [data-w-id="801ededc-b3db-4b98-732d-ebe30f3d31a0"] {
+                opacity: 0;
+            }
+
+            html.w-mod-js:not(.w-mod-ix) [data-w-id="7ffffaf2-b48f-0fd4-3f62-127d7ee7972f"] {
+                opacity: 0;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+    <script type="text/javascript">WebFont.load({ google: { families: ["Red Hat Mono:regular,500,700"] } });</script>
+     <script>!function () { var reb2b = window.reb2b = window.reb2b || []; if (reb2b.invoked) return; reb2b.invoked = true; reb2b.methods = ["identify", "collect"]; reb2b.factory = function (method) { return function () { var args = Array.prototype.slice.call(arguments); args.unshift(method); reb2b.push(args); return reb2b; }; }; for (var i = 0; i < reb2b.methods.length; i++) { var key = reb2b.methods[i]; reb2b[key] = reb2b.factory(key); } reb2b.load = function (key) { var script = document.createElement("script"); script.type = "text/javascript"; script.async = true; script.src = "https://s3-us-west-2.amazonaws.com/b2bjsstore/b/" + key + "/reb2b.js.gz"; var first = document.getElementsByTagName("script")[0]; first.parentNode.insertBefore(script, first); }; reb2b.SNIPPET_VERSION = "1.0.1"; reb2b.load("8XOE9GHXQ4OM"); }();</script> 
+    <style>
+     * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -o-font-smoothing: antialiased;
+        }
+        ::-webkit-scrollbar {
+            width: 9px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1E2125;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #f39727; 
+            border-radius: 50px;
+        }
+        select {
+            border-radius: 0px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+        #responsive-menu::-webkit-scrollbar {
+            display: none;
+        }
+        ::-moz-selection {
+            color: #1E2125;
+            background: #f39727; 
+        }
+        ::selection {
+            color: #1E2125;
+            background: #f39727; 
+        }
+        .button-primary:hover .button-slide-item {
+            margin-left: 100%;
+        }
+        .button-primary:hover .book-a-demo-wrapper {
+            opacity: 0;
+        }
+        .button-primary:hover .start-saving-wrapper {
+            opacity: 1;
+        }
+        .button-primary:hover::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 0.38rem;
+            padding: 0.25rem;
+            background: linear-gradient(90deg,rgb(255, 102, 0), #FF8C00, #ec9b37, #e9a552); 
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+        .navbar.scrolled .nav-links-wrapper {
+            background: rgba(30, 33, 37, 0.8);
+        }
+        .nav-links-wrapper.expanded {
+            background: #34312b !important;
+        }
+        .nav-links-wrapper-inner{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.3125rem;
+        }
+        .nav-link-item{
+            /* gap: 20px; */
+            margin: 0 -0.625rem;
+        }
+        .nav-dropdown-icon {
+            transition: transform ease-in-out 0.3s;
+        }
+        .nav-dropdown-icon.rotated {
+            transform: rotate(180deg);
+            transition: transform ease-in-out 0.3s;
+        }
+        .navbar.scrolled {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        
+        .nav-link-item:hover .nav-dot {
+            background: #f39727; 
+        }
+        
+        .subnav-link.w--current .subnav-dot {
+            background: #f39727;
+        }
+        .button-slide-item-img img{
+            background-size: cover;
+            height: fit-content;
+        }
+        .text-color-orange{
+            color: orange;
+        }
+        @media only screen and (min-width: 991px) {
+            .responsive-nav {
+                display: none !important;
+            }
+        }
+        .subnav-link {
+            display: block;
+            padding: 0.625rem;
+            text-decoration: none; 
+            color: inherit;
+            border-bottom: 2px solid ; 
+            transition: border-color 0.3s ease; 
+        }
+
+        .subnav-link:hover {
+            border-bottom: 2px solid orange; 
+            background-color: rgba(250, 166, 11, 0.2);
+        }
+
+        .subnav-link:hover {
+            text-decoration: none !important; 
+            box-shadow: none !important; 
+        }
+        .typing-line {
+            font-family: "VT323", monospace;
+            font-size: 1.7em;
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            color: rgb(253, 176, 32);
+            border-right: 3px solid transparent; 
+            animation: typing 2s steps(30) 1s 1 normal both, blink-caret 0.75s step-end infinite;
+            margin-bottom: 20px;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: orange; }
+        }
+        .hidden-description, #dbms-text {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+        #dbms-text{
+            font-size: 5rem;
+            font-weight: 500;
+        }
+        .atf-h1-wrapper.show #dbms-text,
+        .atf-h1-wrapper.show .hidden-description {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hidden-description {
+            font-size: 1em;
+            margin-top: 0.3125rem;
+        }
+
+        /* Remove white cursor from after the words */
+        .cursor {
+            border: none; /* Remove border to eliminate the cursor */
+            animation: none; /* Disable cursor animation */
+            display: inline-block;
+        }
+
+    </style>    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        .swiper-next.is-disabled,
+        .swiper-prev.is-disabled {
+            opacity: 30%;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="main-wrapper">
+            <nav class="navbar-component">
+                <div class="navbar">
+                    <div class="padding-global">
+                        <div class="w-layout-blockcontainer container w-container">
+                            <div class="navbar-flex-wrapper">
+                                <h1>DBMS</h1>
+                                <div class="nav-links-wrapper">
+                                    <div class="nav-links-wrapper-inner">
+                                        <div id="partners" class="nav-link-item">
+                                            <!-- <div class="nav-dot partners"></div> -->
+                                            <!-- <div>Content</div> -->
+                                            <div class="nav-dropdown-icon w-embed">
+                                                <!-- <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10.7559 0.5L5.75586 5.5L0.755859 0.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg> -->
+                                            </div>
+                                        </div>
+                                        <div id="about" class="nav-link-item">
+                                            <div class="nav-dot about"></div>
+                                            <div>CONTENT</div>
+                                            <div class="nav-dropdown-icon w-embed"><svg width="12" height="6"
+                                                viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.7559 0.5L5.75586 5.5L0.755859 0.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div id="features" class="nav-link-item">
+                                        <div class="nav-dot features"></div>
+                                        <div class="text-block">Developers</div>
+                                        <div class="nav-dropdown-icon w-embed"><svg width="12" height="6"
+                                                viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.7559 0.5L5.75586 5.5L0.755859 0.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="nav-links-dropdown-wrapper">
+                                        <div class="partners-dropdown">
+                                            <div class="subnav-wrapper w-dyn-list">
+                                                <!-- <div role="list" class="subnav-list w-dyn-items">
+                                                    <div role="listitem" class="subnav-item w-dyn-item"><a
+                                                            href="/partners/aws" class="subnav-link w-inline-block">
+                                                            <div class="subnav-title">
+                                                                <div class="subnav-dot"></div>
+                                                                <div>AWS</div>
+                                                            </div>
+                                                            <div class="subnav-subtitle">Save up to 50% on AWS.</div>
+                                                        </a></div>
+                                                    <div role="listitem" class="subnav-item w-dyn-item"><a
+                                                            href="/partners/google-cloud"
+                                                            class="subnav-link w-inline-block">
+                                                            <div class="subnav-title">
+                                                                <div class="subnav-dot"></div>
+                                                                <div>GCP</div>
+                                                            </div>
+                                                            <div class="subnav-subtitle">Save up to 40% on GCP.</div>
+                                                        </a></div>
+                                                </div> -->
+                                            </div>
+                                        </div> 
+                                        <div class="features-dropdown">
+                                            <div class="subnav-wrapper features w-dyn-list">
+                                                <div role="list" class="subnav-list w-dyn-items">
+                                                    <div role="listitem" class="subnav-item w-dyn-item">
+                                                        <a href="" class="subnav-link w-inline-block">
+                                                            <div class="subnav-title">
+                                                                <div class="subnav-dot"></div>
+                                                                <div>Loukik Salvi</div>
+                                                            </div>
+                                                            <div class="subnav-subtitle">Mentor</div>
+                                                        </a>
+                                                    </div>
+                                                    <div role="listitem" class="subnav-item w-dyn-item">
+                                                        <a href="Anushka/" class="subnav-link w-inline-block">
+                                                            <div class="subnav-title">
+                                                                <div class="subnav-dot"></div>
+                                                                <div>Anushka Yadav</div>
+                                                            </div>
+                                                            <div class="subnav-subtitle">Frontend Development</div>
+                                                        </a>
+                                                    </div>
+                                                    <div role="listitem" class="subnav-item w-dyn-item">
+                                                        <a href="https://aryanyadav-portfolio.vercel.app/" class="subnav-link w-inline-block">
+                                                            <div class="subnav-title">
+                                                                <div class="subnav-dot"></div>
+                                                                <div>Aryan Yadav</div>
+                                                            </div>
+                                                            <div class="subnav-subtitle">Backend Development</div>
+                                                        </a>
+                                                    </div>
+                                                    <div role="listitem" class="subnav-item w-dyn-item">
+                                                        <a href="" class="subnav-link w-inline-block">
+                                                            <div class="subnav-title">
+                                                                <div class="subnav-dot"></div>
+                                                                <div>Unnat Malik</div>
+                                                            </div>
+                                                            <div class="subnav-subtitle">Backend Development</div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="about-dropdown">
+                                            <div class="subnav-wrapper">
+                                                <div class="subnav-list">
+                                                    <div class="subnav-item">
+                                                        <a href="Modules/" class="subnav-link w-inline-block">
+                                                            <div class="subnav-title">
+                                                                <div class="subnav-dot"></div>
+                                                                <div>Modules</div>
+                                                            </div>
+                                                            <div class="subnav-subtitle">All modules in one place.</div>
+                                                        </a>
+                                                    </div>
+                                                    <div id="w-node-_571dfe8b-d172-0bb5-a6a1-fe743497398b-3497394a"
+                                                        class="subnav-item">
+                                                        <a href="ppt/" class="subnav-link w-inline-block">
+                                                            <div class="subnav-title">
+                                                                <div class="subnav-dot"></div>
+                                                                <div>PPTs</div>
+                                                            </div>
+                                                            <div class="subnav-subtitle">PPTs of all chapters.</div>
+                                                        </a>
+                                                    </div>
+                                                    <div id="w-node-_571dfe8b-d172-0bb5-a6a1-fe7434973991-3497394a" class="subnav-item">
+                                                        <a href="Practicals/" class="subnav-link w-inline-block">
+                                                            <div class="subnav-title">
+                                                                <div class="subnav-dot"></div>
+                                                                <div>Practicals</div>
+                                                            </div>
+                                                            <div class="subnav-subtitle">All practicals.</div>
+                                                        </a>
+                                                    </div>
+                                                    <div id="w-node-_571dfe8b-d172-0bb5-a6a1-fe7434973997-3497394a" class="subnav-item">
+                                                        <a href="StudyMaterial/" class="subnav-link w-inline-block">
+                                                            <div class="subnav-title">
+                                                                <div class="subnav-dot"></div>
+                                                                <div>Study Materials</div>
+                                                            </div>
+                                                            <div class="subnav-subtitle">For additional refrence.</div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-last-col">
+                                    <div data-w-id="14e7fa1c-5f0e-05d2-abfd-3a23541d8085" class="burger-wrapper">
+                                        <div class="burger">
+                                            <div class="burger-bar-wrap">
+                                                <div data-w-id="3fae262d-9f9b-8254-d004-cb9b2735a19c" class="b2-bar1">
+                                                </div>
+                                                <div class="b2-middle-wrap">
+                                                    <div data-w-id="3fae262d-9f9b-8254-d004-cb9b2735a19e"
+                                                        class="b2-middle-bar-left"></div>
+                                                    <div data-w-id="3fae262d-9f9b-8254-d004-cb9b2735a19f"
+                                                        class="b2-middle-bar-right">
+                                                    </div>
+                                                </div>
+                                                <div data-w-id="3fae262d-9f9b-8254-d004-cb9b2735a1a0" class="b2-bar3">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav id="responsive-menu" class="responsive-nav">
+                </nav>
+            </nav>
+            <div class="star-space">
+                <div aria-hidden="true" class="constellation-home-1" data-w-id="fda62295-2b75-739a-1be1-4786d4c5af09"
+                    data-animation-type="lottie"
+                    data-src="https://cdn.prod.website-files.com/665f27834e206c9660b3a626/6661b3e245bb5485a61fe67a_Constellation1.json"
+                    data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
+                    data-default-duration="9.366666666666667" data-duration="0"></div>
+                <section class="section">
+                    <div class="padding-global">
+                        <div class="w-layout-blockcontainer container w-container">
+                            <div class="atf-padding">
+                                <div class="aft-wrapper">
+                                    <div class="atf-col-1">
+                                        <div data-w-id="7ad75875-cd0c-a531-39f7-6b88ba906a22" class="atf-h1-wrapper">
+                                            <h2>
+                                                <div class="typing-line">
+                                                    <span class="text-to-type">WELCOME TO THE WORLD OF</span>
+                                                    <!-- <span class="cursor">|</span> -->
+                                                </div>
+                                            </h2>
+                                            <h1 class="heading-style-h1" id="dbms-text">database<br />management<span class="text-color-orange">&nbsp;system</span></h1><br>
+                                            <p id="dbms-description" class="hidden-description">Find all the study materials for DBMS subject in one place.</p>
+                                        </div>
+                                    </div>
+                                    <script>
+                                                document.addEventListener('DOMContentLoaded', function () {
+                                            const h1Wrapper = document.querySelector('.atf-h1-wrapper');
+                                            const dbmsText = document.getElementById('dbms-text');
+                                            const description = document.getElementById('dbms-description');
+                                            
+                                            // After typing animation ends, show the DBMS text and description
+                                            setTimeout(function () {
+                                                h1Wrapper.classList.add('show');
+                                            }, 3500); // Adjust timing based on typing speed
+                                        });
+                                    </script>                                    
+                                    <div class="atf-col-2">
+                                        <div class="star-visuals-wrapper">
+                                            <div class="star-img-wrapper">
+                                                <img
+                                                    src="https://www.shutterstock.com/image-vector/sunny-orange-neon-laser-rays-600nw-2208019233.jpg"
+                                                    loading="lazy"
+                                                    sizes="(max-width: 479px) 100vw, (max-width: 991px) 90vw, (max-width: 1919px) 80vw, 70vw"
+                                                    srcset=""
+                                                    alt="" class="star-img" />
+                                            </div>
+                                            <!-- <div class="star-ring-lottie"
+                                                data-w-id="122a433e-f005-02bb-7ab5-be668d70ced9"
+                                                data-animation-type="lottie"
+                                                data-src="https://cdn.prod.website-files.com/665f27834e206c9660b3a626/6661802eaf12d473b0ab9de9_Circle%20around%20star.json"
+                                                data-loop="1" data-direction="1" data-autoplay="1"
+                                                data-is-ix2-target="0" data-renderer="svg" data-default-duration="20"
+                                                data-duration="0">
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- <img src="https://cdn.prod.website-files.com/665f27834e206c9660b3a626/6661b7e2cc9e612f00511849_half-orbit.svg" loading="lazy" width="239" height="728" alt="" class="half-orbit-img" /> -->
+             
+            <section class="section position-relative overflow-hidden">
+                 <div class="padding-global">
+                    <div class="w-layout-blockcontainer container w-container">
+                        <div class="padding-section-large">
+                            <div class="faqs-title-wrapper">
+                                <h2 class="heading-style-h1">Code Snippets</h2>
+                                <p class="text-size-regular">Code spinnets for better understanding</p>
+                            </div>
+                            <div class="faqs-wrapper w-dyn-list">
+                                <div role="list" class="faqs-list w-dyn-items">
+                                    <div data-w-id="c41f9944-c21d-d954-2be3-f72a8040b6ef" role="listitem"
+                                        class="faqs-item w-dyn-item">
+                                        <div class="faqs-top">
+                                            <div class="faqs-question">SQL Syntax</div>
+                                            <div style="color:#FF8C00" class="faqs-icon w-embed"><svg
+                                                    width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M9.5 -6.55671e-08C9.77614 -7.76376e-08 10 0.223858 10 0.5L10 17.5C10 17.7761 9.77614 18 9.5 18L8.5 18C8.22386 18 8 17.7761 8 17.5L8 0.5C8 0.223858 8.22386 -9.78513e-09 8.5 -2.18557e-08L9.5 -6.55671e-08Z"
+                                                        fill="#FF8C00" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M18 9.5C18 9.77614 17.7761 10 17.5 10H0.5C0.223858 10 0 9.77614 0 9.5V8.5C0 8.22386 0.223858 8 0.5 8H17.5C17.7761 8 18 8.22386 18 8.5V9.5Z"
+                                                        fill="#FF8C00" />
+                                                </svg></div>
+                                        </div>
+                                        <style>
+                                            .text-rich-text button{
+                                                border: 1px solid orange;
+                                                color: orange;
+                                                background-color: transparent;
+                                                border-radius: 5%;
+                                                transition: all 0.5s;
+                                            }
+                                            .text-rich-text button:hover{
+                                                background-color: orange;
+                                                color: white;
+                                                outline: 1px white;
+                                            }
+                                        </style>
+                                        <div style="height:0px" class="faqs-bottom">
+                                            <div class="faqs-bottom-inner">
+                                                <div class="text-rich-text w-richtext">
+                                                    <code>
+                                                        <b>Basic SQL Syntax Example</b><br>
+                                                        SHOW DATABASES; <br>
+                                                        CREATE DATABASE db_name; <br>
+                                                        USE db_name; <br>
+                                                    </code><br>
+                                                    <a href="https://www.w3schools.com/sql/sql_intro.asp"><button>Learn More</button></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-w-id="c41f9944-c21d-d954-2be3-f72a8040b6ef" role="listitem"
+                                        class="faqs-item w-dyn-item">
+                                        <div class="faqs-top">
+                                            <div class="faqs-question">SQL Tables</div>
+                                            <div style="color:#FF8C00" class="faqs-icon w-embed"><svg
+                                                    width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M9.5 -6.55671e-08C9.77614 -7.76376e-08 10 0.223858 10 0.5L10 17.5C10 17.7761 9.77614 18 9.5 18L8.5 18C8.22386 18 8 17.7761 8 17.5L8 0.5C8 0.223858 8.22386 -9.78513e-09 8.5 -2.18557e-08L9.5 -6.55671e-08Z"
+                                                        fill="#FF8C00" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M18 9.5C18 9.77614 17.7761 10 17.5 10H0.5C0.223858 10 0 9.77614 0 9.5V8.5C0 8.22386 0.223858 8 0.5 8H17.5C17.7761 8 18 8.22386 18 8.5V9.5Z"
+                                                        fill="#FF8C00" />
+                                                </svg></div>
+                                        </div>
+                                        <div style="height:0px" class="faqs-bottom">
+                                            <div class="faqs-bottom-inner">
+                                                <div class="text-rich-text w-richtext">
+                                                    <code>
+                                                        <b>Learn about how to create a table and insert data in it.</b><br>
+                                                        CREATE TABLE tb_name( <br>
+                                                        column1 datatype constraint; <br>
+                                                        column2 datatype constraint; <br>
+                                                        ... <br>
+                                                        ); <br>
+                                                        INSERT INTO table_name (column1, column2, ...) <br>
+                                                        VALUES <br>(value1, value2, ...); <br><br>
+                                                        <b>The DROP TABLE statement is used to drop an existing table in a database.</b><br>
+                                                        DROP TABLE table_name;<br><br>
+                                                        <b>The TRUNCATE TABLE statement is used to delete the data inside a table, but not the table itself.</b><br>
+                                                        TRUNCATE TABLE table_name;<br>
+                                                    </code><br>
+                                                    <a href="https://www.w3schools.com/sql/sql_create_table.asp"><button>Learn More</button></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-w-id="c41f9944-c21d-d954-2be3-f72a8040b6ef" role="listitem"
+                                        class="faqs-item w-dyn-item">
+                                        <div class="faqs-top">
+                                            <div class="faqs-question">Constraints</div>
+                                            <div style="color:#FF8C00" class="faqs-icon w-embed"><svg
+                                                    width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M9.5 -6.55671e-08C9.77614 -7.76376e-08 10 0.223858 10 0.5L10 17.5C10 17.7761 9.77614 18 9.5 18L8.5 18C8.22386 18 8 17.7761 8 17.5L8 0.5C8 0.223858 8.22386 -9.78513e-09 8.5 -2.18557e-08L9.5 -6.55671e-08Z"
+                                                        fill="#FF8C00" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M18 9.5C18 9.77614 17.7761 10 17.5 10H0.5C0.223858 10 0 9.77614 0 9.5V8.5C0 8.22386 0.223858 8 0.5 8H17.5C17.7761 8 18 8.22386 18 8.5V9.5Z"
+                                                        fill="#FF8C00" />
+                                                </svg></div>
+                                        </div>
+                                        <div style="height:0px" class="faqs-bottom">
+                                            <div class="faqs-bottom-inner">
+                                                <div class="text-rich-text w-richtext">
+                                                    <b>The following constraints are commonly used in SQL:</b><br>
+                                                    <ul>
+                                                        <li>NOT NULL - Ensures that a column cannot have a NULL value</li>
+                                                        <li>UNIQUE - Ensures that all values in a column are different</li>
+                                                        <li>PRIMARY KEY - A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table</li>
+                                                        <li>FOREIGN KEY - Prevents actions that would destroy links between tables</li>
+                                                        <li>CHECK - Ensures that the values in a column satisfies a specific condition</li>
+                                                    </ul> 
+                                                    <a href="https://www.w3schools.com/sql/sql_constraints.asp"><button>Learn More</button></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-w-id="c41f9944-c21d-d954-2be3-f72a8040b6ef" role="listitem"
+                                        class="faqs-item w-dyn-item">
+                                        <div class="faqs-top">
+                                            <div class="faqs-question">DDL, DML, DCL and TCL Commands</div>
+                                            <div style="color:#FF8C00" class="faqs-icon w-embed"><svg
+                                                    width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M9.5 -6.55671e-08C9.77614 -7.76376e-08 10 0.223858 10 0.5L10 17.5C10 17.7761 9.77614 18 9.5 18L8.5 18C8.22386 18 8 17.7761 8 17.5L8 0.5C8 0.223858 8.22386 -9.78513e-09 8.5 -2.18557e-08L9.5 -6.55671e-08Z"
+                                                        fill="#FF8C00" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M18 9.5C18 9.77614 17.7761 10 17.5 10H0.5C0.223858 10 0 9.77614 0 9.5V8.5C0 8.22386 0.223858 8 0.5 8H17.5C17.7761 8 18 8.22386 18 8.5V9.5Z"
+                                                        fill="#FF8C00" />
+                                                </svg></div>
+                                        </div>
+                                        <div style="height:0px" class="faqs-bottom">
+                                            <div class="faqs-bottom-inner">
+                                                <div class="text-rich-text w-richtext">
+                                                    <ul>
+                                                        <li>DDL (Data Definition Language) actually consists of the SQL commands that can be used to define the database schema.</li>
+                                                        <li>The SQL commands that deal with the manipulation of data present in the database belong to DML (Data Manipulation Language) and this includes most of the SQL statements.</li>
+                                                        <li>DCL includes commands such as GRANT and REVOKE which mainly deal with the rights, permissions, and other controls of the database system. </li>
+                                                        <li>TCL (Transaction Control Language): Transactions group a set of tasks into a single execution unit. Each transaction begins with a specific task and ends when all the tasks in the group are successfully completed. If any of the tasks fail, the transaction fails.</li>
+                                                    </ul> 
+                                                    <a href="https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/"><button>Learn More</button></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-w-id="c41f9944-c21d-d954-2be3-f72a8040b6ef" role="listitem"
+                                        class="faqs-item w-dyn-item">
+                                        <div class="faqs-top">
+                                            <div class="faqs-question">Quiz Time!</div>
+                                            <div style="color: #FF8C00" class="faqs-icon w-embed"><svg
+                                                    width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M9.5 -6.55671e-08C9.77614 -7.76376e-08 10 0.223858 10 0.5L10 17.5C10 17.7761 9.77614 18 9.5 18L8.5 18C8.22386 18 8 17.7761 8 17.5L8 0.5C8 0.223858 8.22386 -9.78513e-09 8.5 -2.18557e-08L9.5 -6.55671e-08Z"
+                                                        fill="#FF8C00" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M18 9.5C18 9.77614 17.7761 10 17.5 10H0.5C0.223858 10 0 9.77614 0 9.5V8.5C0 8.22386 0.223858 8 0.5 8H17.5C17.7761 8 18 8.22386 18 8.5V9.5Z"
+                                                        fill="#FF8C00" />
+                                                </svg></div>
+                                        </div>
+                                        <div style="height:0px" class="faqs-bottom">
+                                            <div class="faqs-bottom-inner">
+                                                <div class="text-rich-text w-richtext">
+                                                    <b>Test your knowledge!</b> <br><br>
+                                                    <a href="https://www.w3schools.com/sql/sql_quiz.asp"><button>Get Started</button></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div aria-hidden="true" class="constellation-home-2" data-w-id="e65620ca-2ba6-644c-b82d-e4e939546eb3"
+                    data-animation-type="lottie"
+                    data-src="https://cdn.prod.website-files.com/665f27834e206c9660b3a626/6662d817ae448caf820c367c_Constellation3.json"
+                    data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
+                    data-default-duration="9" data-duration="0"></div>
+                <div aria-hidden="true" class="constellation-home-3" data-w-id="78757ffd-b7f1-5698-fb6f-9d536dbd1cae" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/665f27834e206c9660b3a626/6662d885faf6bd7ae35aee72_Constellation4.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="7.733333333333333" data-duration="0"></div>
+            </section>
+            <style>
+                .main-cta-wrapper{
+                    box-shadow: 0 0 12.5rem orange;
+                }
+                .button-primary {
+                    border: 1px solid orange; 
+                    outline: none; 
+                }
+                .button-primary:focus {
+                    outline: 2px solid orange; 
+                }
+            </style>
+            <section class="section">
+                <div class="padding-global">
+                    <div class="w-layout-blockcontainer container w-container">
+                        <div class="padding-section-large">
+                            <div class="main-cta-wrapper">
+                                <div class="main-cta-col-1">
+                                    <h2 class="heading-style-h1">Start Coding</h2>
+                                </div>
+                                <div class="main-cta-col-2">
+                                    <p class="text-size-regular">Enhance your skills by practicing what you've learnt by coding...</p>
+                                    <div class="main-cta-buttons-wrapper">
+                                            <a href="https://onecompiler.com/mysql" target="_blank" class="button-primary w-inline-block">
+                                            <div class="button-slide-item">
+                                                <img src="https://cpng.pikpng.com/pngl/s/145-1453647_cool-arrow-clipart.png" loading="lazy" width="13" height="18" alt="" class="button-slide-item-img" /></div>
+                                            <div class="book-a-demo-wrapper">
+                                                <div>Get Started</div>
+                                            </div>
+                                            <div class="start-saving-wrapper">
+                                                <div>Happy Coding<br /></div>
+                                            </div>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="padding-global">
+                    <div class="w-layout-blockcontainer container w-container">
+                        <div class="footer-padding">
+                            <div class="footer-bottom">
+                                <div class="text-size-small w-embed w-script">
+                                    <div>
+                                        &copy;
+                                        <span id="copyright-2">
+                                            <script>document.getElementById('copyright-2').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                                        </span>
+                                        Class Comp C | All Rights Reserved. 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=665f27834e206c9660b3a626"
+        type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.prod.website-files.com/665f27834e206c9660b3a626/js/webflow.a8a17b9b1.js"
+        type="text/javascript"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinksWrapper = document.querySelector('.nav-links-wrapper');
+            const partnersLink = document.getElementById('partners');
+            const featuresLink = document.getElementById('features');
+            const aboutLink = document.getElementById('about');
+            const partnersDropdown = document.querySelector('.partners-dropdown');
+            const featuresDropdown = document.querySelector('.features-dropdown');
+            const aboutDropdown = document.querySelector('.about-dropdown');
+            const partnersIcon = partnersLink.querySelector('.nav-dropdown-icon');
+            const featuresIcon = featuresLink.querySelector('.nav-dropdown-icon');
+            const aboutIcon = aboutLink.querySelector('.nav-dropdown-icon');
+            const allDropdowns = [partnersDropdown, featuresDropdown, aboutDropdown];
+            const allIcons = [partnersIcon, featuresIcon, aboutIcon];
+            function closeAllDropdowns() {
+                allDropdowns.forEach(dropdown => {
+                    dropdown.style.display = 'none';
+                });
+                allIcons.forEach(icon => {
+                    icon.classList.remove('rotated');
+                });
+                navLinksWrapper.classList.remove('expanded');
+            }
+
+            function openDropdown(dropdown, icon) {
+                closeAllDropdowns();
+                dropdown.style.display = 'block';
+                icon.classList.add('rotated');
+                navLinksWrapper.classList.add('expanded');
+            }
+
+            partnersLink.addEventListener('mouseenter', function () {
+                openDropdown(partnersDropdown, partnersIcon);
+            });
+
+            featuresLink.addEventListener('mouseenter', function () {
+                openDropdown(featuresDropdown, featuresIcon);
+            });
+
+            aboutLink.addEventListener('mouseenter', function () {
+                openDropdown(aboutDropdown, aboutIcon);
+            });
+
+            navLinksWrapper.addEventListener('mouseleave', function () {
+                closeAllDropdowns();
+            });
+
+            document.addEventListener('click', function (e) {
+                if (!navLinksWrapper.contains(e.target)) {
+                    closeAllDropdowns();
+                }
+            });
+        });
+    </script>
+    <script>
+        const navbar = document.querySelector('.navbar');
+        const threshold = 50;
+
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > threshold) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+    </script>
+
+    <script>
+        $('.w-dyn-empty').parents('.news-banner-wrapper').each(function () { $(this).hide() })
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        $(".slider-testimonials-component").each(function (index) {
+            const swiper = new Swiper($(this).find(".swiper")[0], {
+                slidesPerView: 1, 
+                spaceBetween: "5%", 
+                speed: 700,
+                loop: false,
+                keyboard: true,
+                pagination: {
+                    el: $(this).find(".swiper-bullet-wrapper")[0],
+                    bulletActiveClass: "is-active",
+                    bulletClass: "swiper-bullet",
+                    bulletElement: "span",
+                    clickable: true
+                },
+                navigation: {
+                    nextEl: $(this).find(".swiper-next")[0],
+                    prevEl: $(this).find(".swiper-prev")[0],
+                    disabledClass: "is-disabled"
+                },
+                breakpoints: {
+                    480: {
+                        slidesPerView: 1,
+                        spaceBetween: "4%"
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: "3%"
+                    },
+                    992: {
+                        slidesPerView: 2,
+                        spaceBetween: "5%"
+                    }
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
