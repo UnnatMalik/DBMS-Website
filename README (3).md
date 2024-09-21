@@ -1,6 +1,8 @@
 
 <br/>
 <div align="center">
+  
+![Screenshot 2024-09-21 113615](https://github.com/user-attachments/assets/26190037-992a-4763-9089-a11d259a7683)
 
 <h3 align="center">DBMS-website</h3>
 <p align="center">
@@ -66,9 +68,9 @@ Start the server
 ## Roadmap
 
 Below is the Block-diagram for the project explaining the details and simple workflow of our project : 
+![Screenshot 2024-09-21 083717](https://github.com/user-attachments/assets/0033141d-663d-47b8-9b23-1f2e7d0c40fa)
 
 
-<iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials"></iframe>
 ## Contact
 
  Frontend dev : Anushka yadav 
