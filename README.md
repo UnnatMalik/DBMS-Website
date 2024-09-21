@@ -70,6 +70,19 @@ Start the server
 Below is the Block-diagram for the project explaining the details and simple workflow of our project : 
 ![Screenshot 2024-09-21 083717](https://github.com/user-attachments/assets/0033141d-663d-47b8-9b23-1f2e7d0c40fa)
 
+## Usage
+
+1. **Access Study Materials**:
+   - Once logged in, users can navigate to the **Materials** section.
+   - You can view, download, and search for PowerPoint presentations (PPTs), practical lab files, and reference books.
+   - All files are categorized for ease of access.
+
+2. **CRUD Operations (For Authorized Users)**:
+   - If you are an authorized user (e.g., admin or contributor), you can upload new study materials, edit existing ones, or delete outdated resources.
+   - Access the **Admin Panel** for additional controls over content and user permissions.
+
+3. **Mobile Friendly**:
+   - The website is fully responsive and can be accessed on desktops, tablets, and mobile devices.
 
 ## Contact
 
