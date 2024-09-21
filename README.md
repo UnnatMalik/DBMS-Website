@@ -30,6 +30,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 - [HMTL ](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Node](https://nodejs.org/en)
 - [Django](https://docs.djangoproject.com/en/5.1/)
 ## Getting Started
@@ -94,6 +95,6 @@ Backend Dev : Unnat Malik
 - <a href="https://github.com/UnnatMalik" target="_blank"> Github Profile</a> 
 - <a href="https://linkedin.com/in/unnat-malik-2b90bb2b4" target="_blank">  linkedin Profile</a> 
 
-Backend Dev : Aryan yadav 
+Backend Dev & deployment : Aryan yadav 
 - <a href="https://github.com/aryanyadav-dev" target="_blank"> Github Profile</a> 
 - <a href="https://linkedin.com/in/-aryanyadav" target="_blank">  linkedin Profile</a> 
