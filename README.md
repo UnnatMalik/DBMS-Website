@@ -1,8 +1,8 @@
 
 
-<div align="center" >
+<center>
 ![Screenshot 2024-09-21 113615](https://github.com/user-attachments/assets/e7fb20c2-a460-4b5c-a0bf-59c20fea7cad)
-</div>
+</center>
 <h3 align="center">DBMS-website</h3>
 <p align="center">
 This is a project about open to DBMS Website that is made by my team from Thakur college of engineering computer department  
