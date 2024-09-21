@@ -68,7 +68,7 @@ Start the server
 Below is the Block-diagram for the project explaining the details and simple workflow of our project : 
 
 
-See the [open issues](<iframe src="https://roadmap.sh/r/embed?id=66d86a696e6d9395456b704e" width="100%" height="500px" frameBorder="0" ></iframe>) for a full list of proposed features (and known issues)
+<iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials"></iframe>
 ## Contact
 
  Frontend dev : Anushka yadav 
