@@ -16,7 +16,8 @@ This is a project about open to DBMS Website that is made by my team from Thakur
 </div>
 
 ## About The Project
-![Screenshot 2024-09-21 140414](https://github.com/user-attachments/assets/45cc8afc-dd4e-4832-b605-e1bb65891d92)
+![image](https://github.com/user-attachments/assets/105f16b9-f3d8-4996-af40-840da0f3410d)
+
 <br>
 This project is made in reference Database management system in Computer science engineering . This project is all about helping students understand about DBMS and learn from all the resources available in this project . 
 
