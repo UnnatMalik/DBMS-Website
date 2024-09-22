@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         @media (min-width:992px) {
             html.w-mod-js:not(.w-mod-ix) [data-w-id="327681a8-4cda-fcd2-8e49-116859dd7b68"] {
@@ -45,6 +46,10 @@
         ::-webkit-scrollbar-thumb {
             background: #f39727; 
             border-radius: 50px;
+        }
+        body{
+            background-color: #1E2125;
+            color: white;
         }
         select {
             border-radius: 0px;
@@ -84,41 +89,40 @@
             mask-composite: exclude;
             pointer-events: none;
         }
-        .navbar.scrolled .nav-links-wrapper {
+        /* .navbar.scrolled .nav-links-wrapper {
             background: rgba(30, 33, 37, 0.8);
-        }
-        .nav-links-wrapper.expanded {
+        } */
+        /* .nav-links-wrapper.expanded {
             background: #34312b !important;
-        }
-        .nav-links-wrapper-inner{
+        } */
+        /* .nav-links-wrapper-inner{
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 0.3125rem;
-        }
-        .nav-link-item{
-            /* gap: 20px; */
+        } */
+        /* .nav-link-item{
             margin: 0 -0.625rem;
-        }
-        .nav-dropdown-icon {
+        } */
+        /* .nav-dropdown-icon {
             transition: transform ease-in-out 0.3s;
-        }
-        .nav-dropdown-icon.rotated {
+        } */
+        /* .nav-dropdown-icon.rotated {
             transform: rotate(180deg);
             transition: transform ease-in-out 0.3s;
-        }
-        .navbar.scrolled {
+        } */
+        /* .navbar.scrolled {
             padding-top: 1rem;
             padding-bottom: 1rem;
-        }
+        } */
         
-        .nav-link-item:hover .nav-dot {
+        /* .nav-link-item:hover .nav-dot {
             background: #f39727; 
-        }
+        } */
         
-        .subnav-link.w--current .subnav-dot {
+        /* .subnav-link.w--current .subnav-dot {
             background: #f39727;
-        }
+        } */
         .button-slide-item-img img{
             background-size: cover;
             height: fit-content;
@@ -128,30 +132,30 @@
         }
         @media only screen and (min-width: 991px) {
             .responsive-nav {
-                display: none !important;
+                /* display: none !important; */
             }
         }
-        .subnav-link {
+        /* .subnav-link {
             display: block;
             padding: 0.625rem;
             text-decoration: none; 
             color: inherit;
             border-bottom: 2px solid ; 
             transition: border-color 0.3s ease; 
-        }
+        } */
 
-        .subnav-link:hover {
+        /* .subnav-link:hover {
             border-bottom: 2px solid orange; 
             background-color: rgba(250, 166, 11, 0.2);
-        }
+        } */
 
-        .subnav-link:hover {
+        /* .subnav-link:hover {
             text-decoration: none !important; 
             box-shadow: none !important; 
-        }
+        } */
         .typing-line {
             font-family: "VT323", monospace;
-            font-size: 1.7em;
+            font-size: 1.5em;
             display: inline-block;
             white-space: nowrap;
             overflow: hidden;
@@ -188,13 +192,11 @@
             margin-top: 0.3125rem;
         }
 
-        /* Remove white cursor from after the words */
         .cursor {
-            border: none; /* Remove border to eliminate the cursor */
-            animation: none; /* Disable cursor animation */
+            border: none; 
+            animation: none; 
             display: inline-block;
         }
-
     </style>    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
@@ -203,191 +205,187 @@
             opacity: 30%;
             pointer-events: none;
         }
+        @media screen and (min-width: 481px) {
+        .nav-links-wrapper {
+            flex-direction: row; 
+        }
+
+        .nav-link-item {
+            margin: 0 15px; 
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .nav-links-wrapper {
+            flex-direction: column; 
+            align-items: flex-start; 
+            padding: 5px; 
+        }
+
+        .nav-link-item {
+            margin: 5px 0; 
+            width: 100%; 
+        }
+
+        .nav-links-dropdown-wrapper {
+            position: relative; 
+            width: 100%; 
+            box-shadow: none; 
+        }
+    }
     </style>
 </head>
 
 <body>
+    <style>
+        .mobile-message {
+            display: none; 
+            text-align: center; 
+            background-color: #f8d7da; 
+            color: #721c24;
+            padding: 10px; 
+            margin-bottom: 10px; 
+        }
+        @media (max-width: 768px) {
+            .mobile-message {
+                display: block; 
+            }
+        }
+        @media (min-width: 769px) {
+            .mobile-message {
+                display: none; 
+            }
+        }
+        .dropdown-menu .dropdown-item:hover {
+            color: orange !important; 
+            background-color: transparent;
+        }
+        .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml,%3Csvg xmlns%3D%27http://www.w3.org/2000/svg%27 viewBox%3D%270 0 30 30%27%3E%3Cpath stroke%3D%27rgba%28255, 255, 255, 1%27 stroke-width%3D%272%27 d%3D%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');
+        }
+</style>
+    </style>
+    <div class="mobile-message">For better user experience, use a larger screen.</div> <!-- Mobile message -->
     <div class="page-wrapper">
         <div class="main-wrapper">
-            <nav class="navbar-component">
-                <div class="navbar">
-                    <div class="padding-global">
-                        <div class="w-layout-blockcontainer container w-container">
-                            <div class="navbar-flex-wrapper">
-                                <h1>DBMS</h1>
-                                <div class="nav-links-wrapper">
-                                    <div class="nav-links-wrapper-inner">
-                                        <div id="partners" class="nav-link-item">
-                                            <!-- <div class="nav-dot partners"></div> -->
-                                            <!-- <div>Content</div> -->
-                                            <div class="nav-dropdown-icon w-embed">
-                                                <!-- <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M10.7559 0.5L5.75586 5.5L0.755859 0.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg> -->
-                                            </div>
-                                        </div>
-                                        <div id="about" class="nav-link-item">
-                                            <div class="nav-dot about"></div>
-                                            <div>CONTENT</div>
-                                            <div class="nav-dropdown-icon w-embed"><svg width="12" height="6"
-                                                viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10.7559 0.5L5.75586 5.5L0.755859 0.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div id="features" class="nav-link-item">
-                                        <div class="nav-dot features"></div>
-                                        <div class="text-block">Developers</div>
-                                        <div class="nav-dropdown-icon w-embed"><svg width="12" height="6"
-                                                viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10.7559 0.5L5.75586 5.5L0.755859 0.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="nav-links-dropdown-wrapper">
-                                        <div class="partners-dropdown">
-                                            <div class="subnav-wrapper w-dyn-list">
-                                                <!-- <div role="list" class="subnav-list w-dyn-items">
-                                                    <div role="listitem" class="subnav-item w-dyn-item"><a
-                                                            href="/partners/aws" class="subnav-link w-inline-block">
-                                                            <div class="subnav-title">
-                                                                <div class="subnav-dot"></div>
-                                                                <div>AWS</div>
-                                                            </div>
-                                                            <div class="subnav-subtitle">Save up to 50% on AWS.</div>
-                                                        </a></div>
-                                                    <div role="listitem" class="subnav-item w-dyn-item"><a
-                                                            href="/partners/google-cloud"
-                                                            class="subnav-link w-inline-block">
-                                                            <div class="subnav-title">
-                                                                <div class="subnav-dot"></div>
-                                                                <div>GCP</div>
-                                                            </div>
-                                                            <div class="subnav-subtitle">Save up to 40% on GCP.</div>
-                                                        </a></div>
-                                                </div> -->
-                                            </div>
-                                        </div> 
-                                        <div class="features-dropdown">
-                                            <div class="subnav-wrapper features w-dyn-list">
-                                                <div role="list" class="subnav-list w-dyn-items">
-                                                    <div role="listitem" class="subnav-item w-dyn-item">
-                                                        <a href="" class="subnav-link w-inline-block">
-                                                            <div class="subnav-title">
-                                                                <div class="subnav-dot"></div>
-                                                                <div>Loukik Salvi</div>
-                                                            </div>
-                                                            <div class="subnav-subtitle">Mentor</div>
-                                                        </a>
-                                                    </div>
-                                                    <div role="listitem" class="subnav-item w-dyn-item">
-                                                        <a href="Anushka/" class="subnav-link w-inline-block">
-                                                            <div class="subnav-title">
-                                                                <div class="subnav-dot"></div>
-                                                                <div>Anushka Yadav</div>
-                                                            </div>
-                                                            <div class="subnav-subtitle">Frontend Development</div>
-                                                        </a>
-                                                    </div>
-                                                    <div role="listitem" class="subnav-item w-dyn-item">
-                                                        <a href="https://aryanyadav-portfolio.vercel.app/" class="subnav-link w-inline-block">
-                                                            <div class="subnav-title">
-                                                                <div class="subnav-dot"></div>
-                                                                <div>Aryan Yadav</div>
-                                                            </div>
-                                                            <div class="subnav-subtitle">Backend Development</div>
-                                                        </a>
-                                                    </div>
-                                                    <div role="listitem" class="subnav-item w-dyn-item">
-                                                        <a href="" class="subnav-link w-inline-block">
-                                                            <div class="subnav-title">
-                                                                <div class="subnav-dot"></div>
-                                                                <div>Unnat Malik</div>
-                                                            </div>
-                                                            <div class="subnav-subtitle">Backend Development</div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="about-dropdown">
-                                            <div class="subnav-wrapper">
-                                                <div class="subnav-list">
-                                                    <div class="subnav-item">
-                                                        <a href="Modules/" class="subnav-link w-inline-block">
-                                                            <div class="subnav-title">
-                                                                <div class="subnav-dot"></div>
-                                                                <div>Modules</div>
-                                                            </div>
-                                                            <div class="subnav-subtitle">All modules in one place.</div>
-                                                        </a>
-                                                    </div>
-                                                    <div id="w-node-_571dfe8b-d172-0bb5-a6a1-fe743497398b-3497394a"
-                                                        class="subnav-item">
-                                                        <a href="ppt/" class="subnav-link w-inline-block">
-                                                            <div class="subnav-title">
-                                                                <div class="subnav-dot"></div>
-                                                                <div>PPTs</div>
-                                                            </div>
-                                                            <div class="subnav-subtitle">PPTs of all chapters.</div>
-                                                        </a>
-                                                    </div>
-                                                    <div id="w-node-_571dfe8b-d172-0bb5-a6a1-fe7434973991-3497394a" class="subnav-item">
-                                                        <a href="Practicals/" class="subnav-link w-inline-block">
-                                                            <div class="subnav-title">
-                                                                <div class="subnav-dot"></div>
-                                                                <div>Practicals</div>
-                                                            </div>
-                                                            <div class="subnav-subtitle">All practicals.</div>
-                                                        </a>
-                                                    </div>
-                                                    <div id="w-node-_571dfe8b-d172-0bb5-a6a1-fe7434973997-3497394a" class="subnav-item">
-                                                        <a href="StudyMaterial/" class="subnav-link w-inline-block">
-                                                            <div class="subnav-title">
-                                                                <div class="subnav-dot"></div>
-                                                                <div>Study Materials</div>
-                                                            </div>
-                                                            <div class="subnav-subtitle">For additional refrence.</div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="nav-last-col">
-                                    <div data-w-id="14e7fa1c-5f0e-05d2-abfd-3a23541d8085" class="burger-wrapper">
-                                        <div class="burger">
-                                            <div class="burger-bar-wrap">
-                                                <div data-w-id="3fae262d-9f9b-8254-d004-cb9b2735a19c" class="b2-bar1">
-                                                </div>
-                                                <div class="b2-middle-wrap">
-                                                    <div data-w-id="3fae262d-9f9b-8254-d004-cb9b2735a19e"
-                                                        class="b2-middle-bar-left"></div>
-                                                    <div data-w-id="3fae262d-9f9b-8254-d004-cb9b2735a19f"
-                                                        class="b2-middle-bar-right">
-                                                    </div>
-                                                </div>
-                                                <div data-w-id="3fae262d-9f9b-8254-d004-cb9b2735a1a0" class="b2-bar3">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <nav class="navbar navbar-expand-lg sticky-top" style="background-color: transparent;">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href=" " style="font-size: 2.5rem; color: white; font-weight: bold; font-family: Verdana, Geneva, Tahoma, sans-serif;">DBMS</a>
+                  
+                  <!-- Navbar toggler with custom icon styling -->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color: white;"></span>
+                  </button>
+                  
+                  <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav" style="gap: 2rem; border-radius: 23px; background-color: rgba(255, 255, 255, 0.096); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); padding: 5px;">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                          CONTENT
+                        </a>
+                        <ul class="dropdown-menu" style="
+                            background-color: rgba(255, 255, 255, 0.15);
+                            backdrop-filter: blur(15px);
+                            -webkit-backdrop-filter: blur(15px);
+                            border-radius: 15px;
+                            padding: 10px;
+                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+                            border: 1px solid rgba(255, 255, 255, 0.2);
+                        ">
+                          <li><a class="dropdown-item" href="Modules/" style="color: white; font-weight: 500; padding: 10px;">Modules</a></li>
+                          <li><a class="dropdown-item" href="ppt/" style="color: white; font-weight: 500; padding: 10px;">PPTs</a></li>
+                          <li><a class="dropdown-item" type= "submit"href="Practicals/" style="color: white; font-weight: 500; padding: 10px;">Practicals</a></li>
+                          <li><a class="dropdown-item" type="submit" href="StudyMaterial/" style="color: white; font-weight: 500; padding: 10px;">Study Materials</a></li>
+                        </ul>
+                      </li>
+                      
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                          DEVELOPERS
+                        </a>
+                        <ul class="dropdown-menu" style="
+                            background-color: rgba(255, 255, 255, 0.15);
+                            backdrop-filter: blur(15px);
+                            -webkit-backdrop-filter: blur(15px);
+                            border-radius: 15px;
+                            padding: 10px;
+                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+                            border: 1px solid rgba(255, 255, 255, 0.2);
+                        ">
+                          <li><a class="dropdown-item" href="#" style="color: white; font-weight: 500; padding: 10px;">Loukik Salvi <br>Mentor</a></li><hr style="color: white;">
+                          <li><a class="dropdown-item" href="Anushka.html" style="color: white; font-weight: 500; padding: 10px;">Anushka Yadav <br>Frontend Development</a></li><hr style="color: white;">
+                          <li><a class="dropdown-item" href="#" style="color: white; font-weight: 500; padding: 10px;">Unnat Malik <br>Backend Development</a></li><hr style="color: white;">
+                          <li><a class="dropdown-item" href="#" style="color: white; font-weight: 500; padding: 10px;">Aryan Yadav <br>Deployment</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <nav id="responsive-menu" class="responsive-nav">
-                </nav>
-            </nav>
+              </nav>
+                         
+
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+            
             <div class="star-space">
                 <div aria-hidden="true" class="constellation-home-1" data-w-id="fda62295-2b75-739a-1be1-4786d4c5af09"
                     data-animation-type="lottie"
                     data-src="https://cdn.prod.website-files.com/665f27834e206c9660b3a626/6661b3e245bb5485a61fe67a_Constellation1.json"
                     data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
-                    data-default-duration="9.366666666666667" data-duration="0"></div>
+                    data-default-duration="9.366666666666667" data-duration="0">
+                </div>
+
+                <style>
+                    @media screen and (max-width: 480px) {
+                        .typing-line {
+                            font-size: 16px !important; 
+                            padding: 0 15px;            
+                        }
+                        .heading-style-h1 {
+                            font-size: 20px !important; 
+                            line-height: 1.3;           
+                            padding: 0 15px;            
+                        }
+
+                        .hidden-description {
+                            font-size: 14px !important; 
+                            padding: 0 15px;            
+                        }
+
+                        .atf-col-1 {
+                            text-align: center;
+                            padding: 0 15px;           
+                        }
+                        .star-visuals-wrapper {
+                            display: none;
+                        }
+                    }
+                    @media screen and (min-width: 481px) and (max-width: 1024px) {
+                        .heading-style-h1 {
+                            font-size: 32px !important; 
+                            line-height: 1.2; 
+                            padding: 0 10px;  
+                        }
+
+                        .hidden-description {
+                            font-size: 16px; 
+                            padding: 0 10px; 
+                        }
+
+                        .typing-line {
+                            font-size: 20px; 
+                            padding: 0 10px; 
+                        }
+
+                        .atf-col-1 {
+                            text-align: center; 
+                            padding: 0 10px;    
+                        }
+
+                        .star-visuals-wrapper {
+                            display: none; 
+                        }
+                    }
+                </style>
                 <section class="section">
                     <div class="padding-global">
                         <div class="w-layout-blockcontainer container w-container">
@@ -398,7 +396,6 @@
                                             <h2>
                                                 <div class="typing-line">
                                                     <span class="text-to-type">WELCOME TO THE WORLD OF</span>
-                                                    <!-- <span class="cursor">|</span> -->
                                                 </div>
                                             </h2>
                                             <h1 class="heading-style-h1" id="dbms-text">database<br />management<span class="text-color-orange">&nbsp;system</span></h1><br>
@@ -411,30 +408,16 @@
                                             const dbmsText = document.getElementById('dbms-text');
                                             const description = document.getElementById('dbms-description');
                                             
-                                            // After typing animation ends, show the DBMS text and description
                                             setTimeout(function () {
                                                 h1Wrapper.classList.add('show');
-                                            }, 3500); // Adjust timing based on typing speed
+                                            }, 3500); 
                                         });
                                     </script>                                    
                                     <div class="atf-col-2">
                                         <div class="star-visuals-wrapper">
                                             <div class="star-img-wrapper">
-                                                <img
-                                                    src="https://www.shutterstock.com/image-vector/sunny-orange-neon-laser-rays-600nw-2208019233.jpg"
-                                                    loading="lazy"
-                                                    sizes="(max-width: 479px) 100vw, (max-width: 991px) 90vw, (max-width: 1919px) 80vw, 70vw"
-                                                    srcset=""
-                                                    alt="" class="star-img" />
+                                                <img src="https://www.shutterstock.com/image-vector/sunny-orange-neon-laser-rays-600nw-2208019233.jpg" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 991px) 90vw, (max-width: 1919px) 80vw, 70vw" alt="Background Image" class="star-img" />
                                             </div>
-                                            <!-- <div class="star-ring-lottie"
-                                                data-w-id="122a433e-f005-02bb-7ab5-be668d70ced9"
-                                                data-animation-type="lottie"
-                                                data-src="https://cdn.prod.website-files.com/665f27834e206c9660b3a626/6661802eaf12d473b0ab9de9_Circle%20around%20star.json"
-                                                data-loop="1" data-direction="1" data-autoplay="1"
-                                                data-is-ix2-target="0" data-renderer="svg" data-default-duration="20"
-                                                data-duration="0">
-                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -443,7 +426,6 @@
                     </div>
                 </section>
             </div>
-            <!-- <img src="https://cdn.prod.website-files.com/665f27834e206c9660b3a626/6661b7e2cc9e612f00511849_half-orbit.svg" loading="lazy" width="239" height="728" alt="" class="half-orbit-img" /> -->
              
             <section class="section position-relative overflow-hidden">
                  <div class="padding-global">
@@ -522,7 +504,8 @@
                                                         column1 datatype constraint; <br>
                                                         column2 datatype constraint; <br>
                                                         ... <br>
-                                                        ); <br>
+                                                        ); <br><br>
+                                                        To insert data in the table INSERT INTO query is used. <br>
                                                         INSERT INTO table_name (column1, column2, ...) <br>
                                                         VALUES <br>(value1, value2, ...); <br><br>
                                                         <b>The DROP TABLE statement is used to drop an existing table in a database.</b><br>
@@ -631,6 +614,177 @@
                     data-default-duration="9" data-duration="0"></div>
                 <div aria-hidden="true" class="constellation-home-3" data-w-id="78757ffd-b7f1-5698-fb6f-9d536dbd1cae" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/665f27834e206c9660b3a626/6662d885faf6bd7ae35aee72_Constellation4.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="7.733333333333333" data-duration="0"></div>
             </section>
+
+            <style>
+                .contain h1 {
+                    text-align: center;
+                    color: #ffa500;
+                    margin-top: 20px;
+                    font-size: 2.5rem;
+                }
+                .contain {
+                    max-width: 800px;
+                    margin: 20px auto;
+                    padding: 20px;
+                }
+                .contain .step {
+                    background-color: #333;
+                    padding: 20px;
+                    margin: 20px 0;
+                    border-radius: 10px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                }
+                .contain .step:hover{
+                    background-color: #2a2c2e;
+                }
+                .contain .step-number {
+                    background-color: #ffa500;
+                    color: #1c1c1c;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                }
+                .contain .step-content {
+                    flex: 1;
+                }
+                .contain .step h2 {
+                    font-size: 1.8rem;
+                    margin-bottom: 10px;
+                }
+                .contain .step p {
+                    font-size: 1rem;
+                    line-height: 1.6;
+                }
+                .contain a{
+                    color: #ffa500;
+                    text-decoration: none;
+                }
+                .contain a:hover {
+                    text-decoration: underline;
+                }
+                .contain .arrow {
+                    width: 20px;
+                    height: 20px;
+                    background-color: #ffa500;
+                    transform: rotate(45deg);
+                    position: absolute;
+                    right: -10px;
+                    top: 50%;
+                    margin-top: -10px;
+                }
+                @media screen and (max-width: 768px) {
+                    .step {
+                        flex-direction: column;
+                        text-align: center;
+                    }
+
+                    .step-number {
+                        margin-right: 0;
+                        margin-bottom: 10px;
+                    }
+
+                    .step-content h2 {
+                        font-size: 20px;
+                    }
+
+                    .step-content p {
+                        font-size: 14px;
+                    }
+
+                    .arrow {
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+
+                @media screen and (max-width: 480px) {
+                    .contain {
+                        padding: 10px;
+                    }
+
+                    h1 {
+                        font-size: 24px;
+                    }
+
+                    .step-content h2 {
+                        font-size: 18px;
+                    }
+
+                    .step-content p {
+                        font-size: 13px;
+                    }
+
+                    .step-number {
+                        width: 40px;
+                        height: 40px;
+                        font-size: 20px;
+                    }
+
+                    .arrow {
+                        display: none; 
+                    }
+                }
+            </style>
+
+            <section>
+                <div class="contain">
+                    <h1>MySQL Workbench Installation Steps</h1>
+                    
+                    <div class="step" id="step1">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h2>Download MySQL Workbench</h2>
+                            <p>Visit the <a href="https://dev.mysql.com/downloads/workbench/" target="_blank">MySQL Workbench Downloads</a> page and select your operating system, then download the installer.</p>
+                        </div>
+                        <div class="arrow"></div>
+                    </div>
+
+                    <div class="step" id="step2">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h2>Run the Installer</h2>
+                            <p>Once downloaded, run the installer and select the "MySQL Workbench" component during the installation process.</p>
+                        </div>
+                        <div class="arrow"></div>
+                    </div>
+
+                    <div class="step" id="step3">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h2>Choose Setup Type</h2>
+                            <p>Select the installation type based on your preference (Typical, Custom, or Complete).</p>
+                        </div>
+                        <div class="arrow"></div>
+                    </div>
+
+                    <div class="step" id="step4">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h2>Install MySQL Workbench</h2>
+                            <p>Click the "Install" button to start the installation. Wait until the process completes.</p>
+                        </div>
+                        <div class="arrow"></div>
+                    </div>
+
+                    <div class="step" id="step5">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h2>Launch MySQL Workbench</h2>
+                            <p>After the installation is complete, launch MySQL Workbench and set up a connection to your MySQL server.</p>
+                        </div>
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </section>
+
             <style>
                 .main-cta-wrapper{
                     box-shadow: 0 0 12.5rem orange;
@@ -654,9 +808,9 @@
                                 <div class="main-cta-col-2">
                                     <p class="text-size-regular">Enhance your skills by practicing what you've learnt by coding...</p>
                                     <div class="main-cta-buttons-wrapper">
-                                            <a href="https://onecompiler.com/mysql" target="_blank" class="button-primary w-inline-block">
+                                            <a href="trial/" target="_blank" class="button-primary w-inline-block">
                                             <div class="button-slide-item">
-                                                <img src="https://cpng.pikpng.com/pngl/s/145-1453647_cool-arrow-clipart.png" loading="lazy" width="13" height="18" alt="" class="button-slide-item-img" /></div>
+                                                <img src="https://cdn-icons-png.flaticon.com/512/3272/3272665.png" loading="lazy" width="13" height="18" alt="" class="button-slide-item-img" /></div>
                                             <div class="book-a-demo-wrapper">
                                                 <div>Get Started</div>
                                             </div>
@@ -670,6 +824,7 @@
                     </div>
                 </div>
             </section>
+
             <section class="section">
                 <div class="padding-global">
                     <div class="w-layout-blockcontainer container w-container">

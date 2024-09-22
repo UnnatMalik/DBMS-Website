@@ -5,7 +5,7 @@ from django.shortcuts import get_object_or_404
 from .models import Filepdf
 
 def homepage(request):
-    return render(request,'dbms.html')
+    return render(request,'./dbms.html')
 
 def download_file(request, id):
     files = get_object_or_404(Filepdf, pk=id)
@@ -42,3 +42,6 @@ def Module(request):
         'files' : files[13::13]
     }
     return render(request, './Modules.html',context)
+
+def trail(request):
+    return render(request,'./trial.html')
