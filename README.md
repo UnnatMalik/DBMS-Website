@@ -98,4 +98,7 @@ Backend Dev : Unnat Malik
 
 Backend Dev & deployment : Aryan yadav 
 - <a href="https://github.com/aryanyadav-dev" target="_blank"> Github Profile</a> 
-- <a href="https://linkedin.com/in/-aryanyadav" target="_blank">  linkedin Profile</a> 
+- <a href="https://linkedin.com/in/-aryanyadav" target="_blank">  linkedin Profile</a>
+
+Mentor : Loukik Salvi 
+- <a href="https://linkedin.com/in/loukik-salvi-589510164/">Linkedin Profile</a>
