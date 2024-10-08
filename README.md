@@ -32,7 +32,6 @@ This section should list any major frameworks/libraries used to bootstrap your p
 - [HMTL ](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [Node](https://nodejs.org/en)
 - [Django](https://docs.djangoproject.com/en/5.1/)
 ## Getting Started
 
